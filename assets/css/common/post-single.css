@@ -170,6 +170,7 @@
 
 .post-content .highlight pre {
     margin: 0;
+    background-color: var(--theme) !important;
 }
 
 .post-content .highlighttable {
@@ -189,7 +190,7 @@
     margin-bottom: 0;
 }
 
-.post-content code {
+.post-content code:not(.language-mermaid) {
     margin: auto 4px;
     padding: 4px 6px;
     font-size: 0.78em;
@@ -198,7 +199,7 @@
     border-radius: 2px;
 }
 
-.post-content pre code {
+.post-content pre code:not(.language-mermaid) {
     display: grid;
     margin: auto 0;
     padding: 10px;
