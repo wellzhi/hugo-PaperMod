@@ -7,6 +7,10 @@
 
 <head>
     {{- partial "head.html" . }}
+    <!-- 数学 -->
+    {{ if .Param "math" }}
+        {{ partialCached "math.html" . }}
+    {{ end }}
 </head>
 
 <body class="
